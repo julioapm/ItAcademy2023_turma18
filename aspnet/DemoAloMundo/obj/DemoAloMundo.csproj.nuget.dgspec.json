@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "d:\\Git\\ItAcademy2023_turma18\\aspnet\\DemoAloMundo\\DemoAloMundo.csproj": {}
+    "D:\\Git\\ItAcademy2023_turma18\\aspnet\\DemoAloMundo\\DemoAloMundo.csproj": {}
   },
   "projects": {
-    "d:\\Git\\ItAcademy2023_turma18\\aspnet\\DemoAloMundo\\DemoAloMundo.csproj": {
+    "D:\\Git\\ItAcademy2023_turma18\\aspnet\\DemoAloMundo\\DemoAloMundo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\Git\\ItAcademy2023_turma18\\aspnet\\DemoAloMundo\\DemoAloMundo.csproj",
+        "projectUniqueName": "D:\\Git\\ItAcademy2023_turma18\\aspnet\\DemoAloMundo\\DemoAloMundo.csproj",
         "projectName": "DemoAloMundo",
-        "projectPath": "d:\\Git\\ItAcademy2023_turma18\\aspnet\\DemoAloMundo\\DemoAloMundo.csproj",
+        "projectPath": "D:\\Git\\ItAcademy2023_turma18\\aspnet\\DemoAloMundo\\DemoAloMundo.csproj",
         "packagesPath": "C:\\Users\\julio\\.nuget\\packages\\",
-        "outputPath": "d:\\Git\\ItAcademy2023_turma18\\aspnet\\DemoAloMundo\\obj\\",
+        "outputPath": "D:\\Git\\ItAcademy2023_turma18\\aspnet\\DemoAloMundo\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\julio\\AppData\\Roaming\\NuGet\\NuGet.Config",

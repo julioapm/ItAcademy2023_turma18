@@ -1,4 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
+using DemoAloMundo.DTOs;
+
 namespace DemoAloMundo.Controllers;
 
 [ApiController]
@@ -27,5 +29,17 @@ public class AloMundoController : ControllerBase
     {
         _logger.LogInformation($"GET /AloMundo/query?nome={nome}");
         return $"Alô, {nome}!";
+    }
+    [HttpPost]
+    public string Post([FromBody] string nome)
+    {
+        _logger.LogInformation($"POST /AloMundo com {nome}");
+        return $"Alô, {nome}!";
+    }
+    [HttpPost("Pessoa")]
+    public string Post(PessoaDTO umaPessoa)
+    {
+        _logger.LogInformation($"POST /AloMundo/Pessoa com {umaPessoa.Nome} {umaPessoa.Idade}");
+        return $"Alô, {umaPessoa.Nome}!";
     }
 }
