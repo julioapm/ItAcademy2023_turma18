@@ -25,6 +25,12 @@ public class CepRepositoryMemoria : ICepRepository
         });
     }
 
+    public CepModel Cadastrar(CepModel cep)
+    {
+        dados.TryAdd(cep.Cep, cep);
+        return cep;
+    }
+
     public CepModel? ConsultaPorCodigo(string codigo)
     {
         CepModel? cep;
