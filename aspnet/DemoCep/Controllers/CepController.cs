@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Cors;
 using DemoCep.Services;
 using DemoCep.Models;
 using DemoCep.DTOs;
@@ -7,6 +8,7 @@ namespace DemoCep.Controllers;
 
 [ApiController]
 [Route("api/v1/cep")]
+[EnableCors("PermiteTudo")]
 public class CepController : ControllerBase
 {
     private ICepRepository _cepRepository;
