@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Cors;
 using DemoCep.Services;
 using DemoCep.Models;
 using DemoCep.DTOs;
+using Microsoft.AspNetCore.Authorization;
 
 namespace DemoCep.Controllers;
 
@@ -46,6 +47,7 @@ public class CepController : ControllerBase
     [ProducesResponseType(201)]
     [ProducesResponseType(404)]
     [ProducesResponseType(500)]
+    [Authorize]
     public ActionResult<CepRespostaDTO> Post(CepRequisicaoDTO cepdto)
     {
         CepModel? cepAtual = _cepRepository.ConsultaPorCodigo(cepdto.Cep);

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "d:\\Git\\ItAcademy2023_turma18\\aspnet\\DemoCep\\DemoCep.csproj": {}
+    "D:\\Git\\ItAcademy2023_turma18\\aspnet\\DemoCep\\DemoCep.csproj": {}
   },
   "projects": {
-    "d:\\Git\\ItAcademy2023_turma18\\aspnet\\DemoCep\\DemoCep.csproj": {
+    "D:\\Git\\ItAcademy2023_turma18\\aspnet\\DemoCep\\DemoCep.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\Git\\ItAcademy2023_turma18\\aspnet\\DemoCep\\DemoCep.csproj",
+        "projectUniqueName": "D:\\Git\\ItAcademy2023_turma18\\aspnet\\DemoCep\\DemoCep.csproj",
         "projectName": "DemoCep",
-        "projectPath": "d:\\Git\\ItAcademy2023_turma18\\aspnet\\DemoCep\\DemoCep.csproj",
+        "projectPath": "D:\\Git\\ItAcademy2023_turma18\\aspnet\\DemoCep\\DemoCep.csproj",
         "packagesPath": "C:\\Users\\julio\\.nuget\\packages\\",
-        "outputPath": "d:\\Git\\ItAcademy2023_turma18\\aspnet\\DemoCep\\obj\\",
+        "outputPath": "D:\\Git\\ItAcademy2023_turma18\\aspnet\\DemoCep\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\julio\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -41,6 +41,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[6.0.16, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.2.3, )"

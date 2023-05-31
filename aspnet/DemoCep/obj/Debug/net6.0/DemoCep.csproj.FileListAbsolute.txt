@@ -30,3 +30,10 @@ D:\Git\ItAcademy2023_turma18\aspnet\DemoCep\obj\Debug\net6.0\refint\DemoCep.dll
 D:\Git\ItAcademy2023_turma18\aspnet\DemoCep\obj\Debug\net6.0\DemoCep.pdb
 D:\Git\ItAcademy2023_turma18\aspnet\DemoCep\obj\Debug\net6.0\DemoCep.genruntimeconfig.cache
 D:\Git\ItAcademy2023_turma18\aspnet\DemoCep\obj\Debug\net6.0\ref\DemoCep.dll
+D:\Git\ItAcademy2023_turma18\aspnet\DemoCep\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\Git\ItAcademy2023_turma18\aspnet\DemoCep\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Git\ItAcademy2023_turma18\aspnet\DemoCep\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+D:\Git\ItAcademy2023_turma18\aspnet\DemoCep\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+D:\Git\ItAcademy2023_turma18\aspnet\DemoCep\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Git\ItAcademy2023_turma18\aspnet\DemoCep\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+D:\Git\ItAcademy2023_turma18\aspnet\DemoCep\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
