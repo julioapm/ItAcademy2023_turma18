@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Git\\ItAcademy2023_turma18\\aspnet\\DemoCep\\DemoCep.csproj": {}
+    "d:\\Git\\ItAcademy2023_turma18\\aspnet\\DemoCep\\DemoCep.csproj": {}
   },
   "projects": {
-    "D:\\Git\\ItAcademy2023_turma18\\aspnet\\DemoCep\\DemoCep.csproj": {
+    "d:\\Git\\ItAcademy2023_turma18\\aspnet\\DemoCep\\DemoCep.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Git\\ItAcademy2023_turma18\\aspnet\\DemoCep\\DemoCep.csproj",
+        "projectUniqueName": "d:\\Git\\ItAcademy2023_turma18\\aspnet\\DemoCep\\DemoCep.csproj",
         "projectName": "DemoCep",
-        "projectPath": "D:\\Git\\ItAcademy2023_turma18\\aspnet\\DemoCep\\DemoCep.csproj",
+        "projectPath": "d:\\Git\\ItAcademy2023_turma18\\aspnet\\DemoCep\\DemoCep.csproj",
         "packagesPath": "C:\\Users\\julio\\.nuget\\packages\\",
-        "outputPath": "D:\\Git\\ItAcademy2023_turma18\\aspnet\\DemoCep\\obj\\",
+        "outputPath": "d:\\Git\\ItAcademy2023_turma18\\aspnet\\DemoCep\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\julio\\AppData\\Roaming\\NuGet\\NuGet.Config",
