@@ -1,16 +1,29 @@
 using DemoEFWebApi.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace DemoEFWebApi.Services;
 
 public class ProdutosRepositoryEF : IProdutosRepository
 {
-    public Task<Produto> ConsultarPorIdAsync(int id)
+    private readonly LojinhaContext _contexto;
+
+    public ProdutosRepositoryEF(LojinhaContext contexto)
     {
-        throw new NotImplementedException();
+        _contexto = contexto;
     }
 
-    public Task<IEnumerable<Produto>> ConsultarTodosAsync()
+    public async Task<Produto?> ConsultarPorIdAsync(int id)
     {
-        throw new NotImplementedException();
+        return await _contexto.Produtos
+            .Where(p => p.Id == id)
+            .FirstOrDefaultAsync();
+    }
+
+    public async Task<IEnumerable<Produto>> ConsultarTodosAsync()
+    {
+        return await _contexto.Produtos
+            .AsNoTracking()
+            .OrderBy(p => p.Nome)
+            .ToListAsync();
     }
 }
