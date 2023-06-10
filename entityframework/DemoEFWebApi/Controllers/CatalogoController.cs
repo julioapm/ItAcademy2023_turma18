@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using DemoEFWebApi.Services;
 using DemoEFWebApi.Models;
+using DemoEFWebApi.Dtos;
 
 namespace DemoEFWebApi.Controllers;
 
@@ -15,8 +16,19 @@ public class CatalogoController : ControllerBase
     }
     //GET .../api/v1/Catalogo
     [HttpGet]
-    public async Task<IEnumerable<Produto>> GetTodos()
+    public async Task<IEnumerable<ProdutoRespostaDTO>> GetTodos()
     {
-        return await _produtosRepository.ConsultarTodosAsync();
+        var produtos = await _produtosRepository.ConsultarTodosAsync();
+        return produtos.Select(p => ProdutoRespostaDTO.DeModelParaDto(p));
+    }
+    //GET .../api/v1/Catalogo/{id}
+    [HttpGet("{id:int}")]
+    public async Task<ActionResult<ProdutoRespostaDTO>> GetPorId(int id)
+    {
+        var produto = await _produtosRepository.ConsultarPorIdAsync(id);
+        if (produto == null) {
+            return NotFound();
+        }
+        return ProdutoRespostaDTO.DeModelParaDto(produto);
     }
 }
