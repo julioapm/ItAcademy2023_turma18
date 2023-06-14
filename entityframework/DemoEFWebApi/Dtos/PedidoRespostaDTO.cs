@@ -17,6 +17,7 @@ public class PedidoRespostaDTO
         dto.NomeCliente = model.Cliente.Nome;
         var total = model.Itens.Sum(item => item.Quantidade*item.Produto.PrecoUnitario/100M);
         dto.ValorTotal = $"{total:C}";
+        dto.Itens = model.Itens.Select(ItemRespostaDTO.DeModelParaDto);
         return dto;
     }
 }

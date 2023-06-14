@@ -20,6 +20,8 @@ public class PedidosController : ControllerBase
         _pedidosRepository = pedidosRepository;
     }
 
+    //GET .../api/v1/Pedidos/{id}
+
     //POST .../api/v1/Pedidos
     [HttpPost]
     public async Task<ActionResult<PedidoRespostaDTO>> PostNovoPedido(CarrinhoRequisicaoDTO carrinho)
@@ -35,6 +37,7 @@ public class PedidosController : ControllerBase
         }
         var pedido = new Pedido();
         pedido.DataEmissao = DateTime.Now;
+        pedido.Cliente = cliente;
         pedido.Itens = new List<Item>();
         foreach (var item in carrinho.Itens)
         {
