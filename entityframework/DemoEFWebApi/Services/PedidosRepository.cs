@@ -17,4 +17,14 @@ public class PedidosRepositoryEF : IPedidosRepository
         await _contexto.SaveChangesAsync();
         return pedido;
     }
+
+    public async Task<Pedido?> ConsultarPorIdAsync(int id)
+    {
+        var pedido = await _contexto.Pedidos
+                        .Where(p => p.Id == id)
+                        .Include(p => p.Cliente)
+                        .Include(p => p.Produtos)
+                        .FirstOrDefaultAsync();
+        return pedido;
+    }
 }
